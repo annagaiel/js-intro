@@ -1,3 +1,4 @@
+
 // // Exercise #1:
 
 // Do the NASA countdown through the console. That is, the console should say:
@@ -106,9 +107,22 @@ console.log(average(numbers))
 // // Exercise #8:
 
 // Create an object that represents a particular book, having attributes of title, author, isbn, pages, and year of publication.
-var book = {title:"Red Riding Hood", author:"Awesome Person", isbn:"ISBN2323424234", pages:"100", year:"1986"};
+var book = {
+  title:"Red Riding Hood",
+  author:"Awesome Person",
+  isbn:"ISBN2323424234",
+  pages:"100",
+  year:"1986",
+  printMessage: function() {
+    console.log(this.title);
+    console.log(this.author);
+    console.log(this.isbn);
+    console.log(this.pages);
+    console.log(this.year);
+  }
+};
 // // Exercise #9:
 
 // Add a function to the above book object that console.logs out all the above information
-
+book.printMessage()
 // // Extra exercises can be found here: http://www.ling.gu.se/~lager/teaching/dialogue_systems%20II/labs/javascript.html
